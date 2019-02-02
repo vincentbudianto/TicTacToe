@@ -1,0 +1,283 @@
+DAFTAR STATE
+q0	----O----
+q1	XO--O----
+q2	XOX-O--O-
+q3	XO-XO--O-
+q4	XO--OX-O-
+q5	XO--O-XO-
+q6	XO--O-OX-
+q7	XO--O--OX
+q8	XOXOO-OX-
+q9	XOO-OXOX-
+q10	XOOOO-XX-
+q11	XOO-O-OXX
+q12	XOXOOXOXO
+q13	XOXOOOOXX
+q14	OX--O----
+q15	OXX-O---O
+q16	OX-XO---O
+q17	OX--OX--O
+q18	OX--O-X-O
+q19	OX--O--XO
+q20	OX--O-O-X
+q21	OXXOO-O-X
+q22	OXOXO-O-X
+q23	OXO-OXO-X
+q24	OXO-O-OXX
+q25	O-X-O----
+q26	OXX-O---O
+q27	O-XXO---O
+q28	O-X-OX--O
+q29	O-X-O-X-O
+q30	O-X-O--XO
+q31	O-X-OO--X
+q32	OXXOOO--X
+q33	OOXXOO--X
+q34	O-XOOOX-X
+q35	O-XOOO-XX
+q36	OOXXOOXOX
+q37	OOXXOOOXX
+q38	O--XO----
+q39	OX-XO---O
+q40	O-XXO---O
+q41	O--XOX--O
+q42	O--XO-X-O
+q43	O--XO--XO
+q44	O-OXO---X
+q45	OXOXO-O-X
+q46	OOOXOX--X
+q47	OOOXO-X-X
+q48	OOOXO--XX
+q49	O---OX---
+q50	OX--OX--O
+q51	O-X-OX--O
+q52	O--XOX--O
+q53	O---OXX-O
+q54	O---OX-XO
+q55	O---OXO-X
+q56	OXO-OXO-X
+q57	O-XOOXO-X
+q58	O-OXOXO-X
+q59	O-O-OXOXX
+q60	O---O-X--
+q61	OX--O-X-O
+q62	O-X-O-X-O
+q63	O--XO-X-O
+q64	O---OXX-O
+q65	O---O-XXO
+q66	O---O-XOX
+q67	OX-OO-XOX
+q68	OOX-O-XOX
+q69	OO-XO-XOX
+q70	OO--OXXOX
+q71	OXXOOOXOX
+q72	OXOOOXXOX
+q73	O---O--X-
+q74	OX--O--XO
+q75	O-X-O--XO
+q76	O--XO--XO
+q77	O---OX-XO
+q78	O---O-XXO
+q79	O---O-OXX
+q80	OXO-O-OXX
+q81	O-XOO-OXX
+q82	O-OXO-OXX
+q83	O-O-OXOXX
+q84	-O--O---X
+q85	XO--O--OX
+q86	-OX-O--OX
+q87	-O-XO--OX
+q88	-O--OX-OX
+q89	-O--O-XOX
+q90	-O--O-OXX
+q91	XOO-O-OXX
+q92	-OX-OOOXX
+q93	-OOXO-OXX
+q94	-OO-OXOXX
+q95	XOXOOOOXX
+q96	OOXXOOOXX
+
+DAFTAR SIMBOL
+OX
+
+STATE AWAL
+q0	----O---
+
+STATE AKHIR
+q2	win
+q3	win
+q4	win
+q5	win
+q7	win
+q9	win
+q10	win
+q11	win
+q12	tie
+q13	win
+q15	win
+q16	win
+q17	win
+q18	win
+q19	win
+q21	win
+q22	win
+q23	win
+q24	win
+q26	win
+q27	win
+q28	win
+q29	win
+q30	win
+q32	win
+q34	win
+q35	win
+q36	win
+q37	tie
+q39	win
+q40	win
+q41	win
+q42	win
+q43	win
+q45	win
+q46	win
+q47	win
+q48	win
+q50	win
+q51	win
+q52	win
+q53	win
+q54	win
+q56	win
+q57	win
+q58	win
+q59	win
+q61	win
+q62	win
+q63	win
+q64	win
+q65	win
+q68	win
+q69	win
+q70	win
+q71	win
+q72	tie
+q74	win
+q75	win
+q76	win
+q77	win
+q78	win
+q80	win
+q81	win
+q82	win
+q83	win
+q85	win
+q86	win
+q87	win
+q88	win
+q89	win
+q91	win
+q93	win
+q94	win
+q95	win
+q96	tie
+
+
+TRANSITION FUNCTION
+q0	q1	q14	q25	q38	q0	q49	q60	q73	q84
+q1	q1	q1	q2	q3	q1	q4	q5	q6	q7
+q2	q2	q2	q2	q2	q2	q2	q2	q2	q2
+q3	q3	q3	q3	q3	q3	q3	q3	q3	q3
+q4	q4	q4	q4	q4	q4	q4	q4	q4	q4
+q5	q5	q5	q5	q5	q5	q5	q5	q5	q5
+q6	q6	q6	q8	q9	q6	q10	q6	q6	q11
+q7	q7	q7	q7	q7	q7	q7	q7	q7	q7
+q8	q8	q8	q8	q8	q8	q12	q8	q8	q13
+q9	q9	q9	q9	q9	q9	q9	q9	q9	q9
+q10	q10	q10	q10	q10	q10	q10	q10	q10	q10
+q11	q11	q11	q11	q11	q11	q11	q11	q11	q11
+q12	q12	q12	q12	q12	q12	q12	q12	q12	q12
+q13	q13	q13	q13	q13	q13	q13	q13	q13	q13
+q14	q14	q14	q15	q16	q14	q17	q18	q19	q20
+q15	q15	q15	q15	q15	q15	q15	q15	q15	q15
+q16	q16	q16	q16	q16	q16	q16	q16	q16	q16
+q17	q17	q17	q17	q17	q17	q17	q17	q17	q17
+q18	q18	q18	q18	q18	q18	q18	q18	q18	q18
+q19	q19	q19	q19	q19	q19	q19	q19	q19	q19
+q20	q20	q20	q21	q22	q20	q23	q20	q24	q20
+q21	q21	q21	q21	q21	q21	q21	q21	q21	q21
+q22	q22	q22	q22	q22	q22	q22	q22	q22	q22
+q23	q23	q23	q23	q23	q23	q23	q23	q23	q23
+q24	q24	q24	q24	q24	q24	q24	q24	q24	q24
+q25	q25	q26	q25	q27	q25	q28	q29	q30	q31
+q26	q26	q26	q26	q26	q26	q26	q26	q26	q26
+q27	q27	q27	q27	q27	q27	q27	q27	q27	q27
+q28	q28	q28	q28	q28	q28	q28	q28	q28	q28
+q29	q29	q29	q29	q29	q29	q29	q29	q29	q29
+q30	q30	q30	q30	q30	q30	q30	q30	q30	q30
+q31	q31	q32	q31	q33	q31	q31	q34	q35	q31
+q32	q32	q32	q32	q32	q32	q32	q32	q32	q32
+q33	q33	q33	q33	q33	q33	q33	q36	q37	q33
+q34	q34	q34	q34	q34	q34	q34	q34	q34	q34
+q35	q35	q35	q35	q35	q35	q35	q35	q35	q35
+q36	q36	q36	q36	q36	q36	q36	q36	q36	q36
+q37	q37	q37	q37	q37	q37	q37	q37	q37	q37
+q38	q38	q39	q40	q38	q38	q41	q42	q43	q44
+q39	q39	q39	q39	q39	q39	q39	q39	q39	q39
+q40	q40	q40	q40	q40	q40	q40	q40	q40	q40
+q41	q41	q41	q41	q41	q41	q41	q41	q41	q41
+q42	q42	q42	q42	q42	q42	q42	q42	q42	q42
+q43	q43	q43	q43	q43	q43	q43	q43	q43	q43
+q44	q44	q45	q44	q44	q44	q46	q47	q48	q44
+q45	q45	q45	q45	q45	q45	q45	q45	q45	q45
+q46	q46	q46	q46	q46	q46	q46	q46	q46	q46
+q47	q47	q47	q47	q47	q47	q47	q47	q47	q47
+q48	q48	q48	q48	q48	q48	q48	q48	q48	q48
+q49	q49	q50	q51	q52	q49	q49	q53	q54	q55
+q50	q50	q50	q50	q50	q50	q50	q50	q50	q50
+q51	q51	q51	q51	q51	q51	q51	q51	q51	q51
+q52	q52	q52	q52	q52	q52	q52	q52	q52	q52
+q53	q53	q53	q53	q53	q53	q53	q53	q53	q53
+q54	q54	q54	q54	q54	q54	q54	q54	q54	q54
+q55	q55	q56	q57	q58	q55	q55	q55	q59	q55
+q56	q56	q56	q56	q56	q56	q56	q56	q56	q56
+q57	q57	q57	q57	q57	q57	q57	q57	q57	q57
+q58	q58	q58	q58	q58	q58	q58	q58	q58	q58
+q59	q59	q59	q59	q59	q59	q59	q59	q59	q59
+q60	q60	q61	q62	q63	q60	q64	q60	q65	q66
+q61	q61	q61	q61	q61	q61	q61	q61	q61	q61
+q62	q62	q62	q62	q62	q62	q62	q62	q62	q62
+q63	q63	q63	q63	q63	q63	q63	q63	q63	q63
+q64	q64	q64	q64	q64	q64	q64	q64	q64	q64
+q65	q65	q65	q65	q65	q65	q65	q65	q65	q65
+q66	q66	q67	q68	q69	q66	q70	q66	q66	q66
+q67	q67	q67	q71	q67	q67	q72	q67	q67	q67
+q68	q68	q68	q68	q68	q68	q68	q68	q68	q68
+q69	q69	q69	q69	q69	q69	q69	q69	q69	q69
+q70	q70	q70	q70	q70	q70	q70	q70	q70	q70
+q71	q71	q71	q71	q71	q71	q71	q71	q71	q71
+q72	q72	q72	q72	q72	q72	q72	q72	q72	q72
+q73	q73	q74	q75	q76	q73	q77	q78	q73	q79
+q74	q74	q74	q74	q74	q74	q74	q74	q74	q74
+q75	q75	q75	q75	q75	q75	q75	q75	q75	q75
+q76	q76	q76	q76	q76	q76	q76	q76	q76	q76
+q77	q77	q77	q77	q77	q77	q77	q77	q77	q77
+q78	q78	q78	q78	q78	q78	q78	q78	q78	q78
+q79	q79	q80	q81	q82	q79	q83	q79	q79	q79
+q80	q80	q80	q80	q80	q80	q80	q80	q80	q80
+q81	q81	q81	q81	q81	q81	q81	q81	q81	q81
+q82	q82	q82	q82	q82	q82	q82	q82	q82	q82
+q83	q83	q83	q83	q83	q83	q83	q83	q83	q83
+q84	q85	q84	q86	q87	q84	q88	q89	q90	q84
+q85	q85	q85	q85	q85	q85	q85	q85	q85	q85
+q86	q86	q86	q86	q86	q86	q86	q86	q86	q86
+q87	q87	q87	q87	q87	q87	q87	q87	q87	q87
+q88	q88	q88	q88	q88	q88	q88	q88	q88	q88
+q89	q89	q89	q89	q89	q89	q89	q89	q89	q89
+q90	q91	q90	q92	q93	q90	q94	q90	q90	q90
+q91	q91	q91	q91	q91	q91	q91	q91	q91	q91
+q92	q95	q92	q92	q96	q92	q92	q92	q92	q92
+q93	q93	q93	q93	q93	q93	q93	q93	q93	q93
+q94	q94	q94	q94	q94	q94	q94	q94	q94	q94
+q95	q95	q95	q95	q95	q95	q95	q95	q95	q95
+q96	q96	q96	q96	q96	q96	q96	q96	q96	q96
+
